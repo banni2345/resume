@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Burhan Ahmad - Web3 Community Manager and DeFi Enthusiast.">
+  <title>BurhanAhmad.Web3 | Community & DeFi Professional</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class', 
+      theme: {
+        extend: {
+          fontFamily: { sans: ['Space Grotesk', 'sans-serif'] },
+          colors: {
+            'primary-web3': '#2563eb',
+            'secondary-web3': '#10b981',
+            'dark-background': '#111827',
+            'dark-card': '#1f2937',
+          },
+          keyframes: {
+            'subtle-glow': {
+              '0%, 100%': { 'box-shadow': '0 0 10px rgba(16, 185, 129, 0.5)' },
+              '50%': { 'box-shadow': '0 0 20px rgba(16, 185, 129, 0.8)' },
+            }
+          },
+          animation: { 'subtle-glow': 'subtle-glow 3s ease-in-out infinite alternate' }
+        },
+      },
+    };
+  </script>
+  <style>
+    body { scroll-behavior: smooth; }
+    
+    .reveal {
+      opacity: 0;
+      transform: translateY(40px);
+      transition: all 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+    }
+    .reveal.active {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .card-hover-3d { transition: all 0.4s ease; }
+    .card-hover-3d:hover {
+        transform: translateY(-10px) rotateX(2deg);
+        box-shadow: 0 20px 40px rgba(16, 185, 129, 0.15);
+    }
+
+    .x-btn {
+        background: rgba(255, 255, 255, 0.05);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        transition: all 0.3s ease;
+    }
+    .x-btn:hover {
+        background: #000;
+        border-color: #1d9bf0;
+        color: #1d9bf0;
+        transform: scale(1.1);
+    }
+
+    /* Updated Timeline Line: Starts from first dot, ends at last */
+    .timeline-line {
+        position: absolute; left: 50%; top: 50px; bottom: 100px;
+        width: 4px; background: linear-gradient(to bottom, #10b981, #374151);
+        transform: translateX(-50%); z-index: 1;
+    }
+    .timeline-dot {
+        position: absolute; width: 1.5rem; height: 1.5rem;
+        border-radius: 50%; background: #10b981;
+        left: 50%; transform: translate(-50%, -50%);
+        border: 4px solid #111827; z-index: 10;
+        box-shadow: 0 0 15px rgba(16, 185, 129, 0.5);
+    }
+
+    @media (max-width: 768px) {
+        .timeline-line, .timeline-dot { display: none; }
+        .reveal { opacity: 1; transform: none; }
+    }
+  </style>
+</head>
+<body class="bg-dark-background text-gray-100 font-sans overflow-x-hidden">
+
+<nav id="nav" class="fixed top-0 w-full bg-dark-background/90 backdrop-blur-md border-b border-gray-800 z-50">
+  <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+    <div class="font-bold text-2xl tracking-tighter text-secondary-web3">BurhanAhmad.<span class="text-gray-200">Web3</span></div> 
+    <div class="flex gap-8">
+      <a href="#about" class="hover:text-secondary-web3 transition-colors font-medium">About</a>
+      <a href="#experience" class="hover:text-secondary-web3 transition-colors font-medium">Experience</a>
+    </div>
+  </div>
+</nav>
+
+<section class="min-h-screen flex flex-col items-center justify-center text-center px-4 pt-20">
+    <div class="reveal">
+        <h1 class="text-6xl md:text-8xl font-bold mb-6 tracking-tight">
+          Hi, I'm <span class="text-secondary-web3">Burhan Ahmad</span>
+        </h1>
+        <p class="text-xl md:text-3xl text-gray-400 mb-10 font-light">Web3 Community Builder & DeFi Enthusiast</p>
+        <a href="#experience" class="inline-block bg-primary-web3 hover:bg-blue-600 text-white px-10 py-4 rounded-full text-lg font-bold transition-all transform hover:scale-105 shadow-lg shadow-primary-web3/20">
+          Explore My Journey ↓
+        </a>
+    </div>
+</section>
+
+<section id="about" class="py-32 px-6 bg-dark-card/30">
+  <div class="max-w-6xl mx-auto reveal">
+    <div class="grid lg:grid-cols-2 gap-16 items-center">
+        <div class="relative">
+            <img src="https://pbs.twimg.com/profile_images/1968019258668978177/t-TuTM4R_400x400.jpg" alt="Burhan Ahmad" class="w-64 h-64 md:w-80 md:h-80 rounded-3xl mx-auto object-cover border-2 border-secondary-web3 animate-subtle-glow relative z-10">
+            <div class="absolute inset-0 bg-secondary-web3/20 blur-[80px] rounded-full"></div>
+        </div>
+        <div class="space-y-6">
+            <h2 class="text-4xl md:text-5xl font-bold text-secondary-web3">About Me</h2>
+            <p class="text-xl leading-relaxed text-gray-300">
+                I'm a Mod jobs lover with 4+ years of experience in moderation. I turn communities into assets, not just chat rooms. I bridge the gap between complex DeFi protocols and thriving user communities.
+            </p>
+            <div class="flex flex-wrap gap-3">
+                <span class="px-4 py-2 bg-dark-card border border-gray-700 rounded-lg text-secondary-web3 text-sm">DeFi & NFT</span>
+                <span class="px-4 py-2 bg-dark-card border border-gray-700 rounded-lg text-secondary-web3 text-sm">Alpha Hunting</span>
+                <span class="px-4 py-2 bg-dark-card border border-gray-700 rounded-lg text-secondary-web3 text-sm">Communication</span>
+                <span class="px-4 py-2 bg-dark-card border border-gray-700 rounded-lg text-secondary-web3 text-sm">Community Growth</span>
+                <span class="px-4 py-2 bg-dark-card border border-gray-700 rounded-lg text-secondary-web3 text-sm">Game Nights Hoster</span>
+                <span class="px-4 py-2 bg-dark-card border border-gray-700 rounded-lg text-secondary-web3 text-sm">Collab Manager</span>
+                <span class="px-4 py-2 bg-dark-card border border-gray-700 rounded-lg text-secondary-web3 text-sm">Discord Setup</span>
+            </div>
+        </div>
+    </div>
+  </div>
+</section>
+
+<section id="experience" class="py-32 px-4 relative overflow-hidden">
+    <div class="max-w-6xl mx-auto relative">
+        <h2 class="text-4xl md:text-6xl font-bold mb-24 text-center text-white">MY <span class="text-secondary-web3">Experiences</span></h2>
+        
+        <div class="timeline-line"></div>
+
+        <div class="flex flex-col md:flex-row-reverse justify-between items-center mb-24 reveal">
+            <div class="timeline-dot" style="top: 0%;"></div>
+            <div class="w-full md:w-[45%] bg-dark-card p-8 rounded-2xl border-r-4 border-secondary-web3 card-hover-3d relative">
+                <div class="flex justify-between items-start mb-6">
+                    <div class="w-22  h-16 rounded-xl bg-gray-800 flex items-center justify-center overflow-hidden border border-gray-700">
+                          Etherforge
+                    </div>
+                    <a href="https://x.com/EtherForge" target="_blank" class="x-btn p-3 rounded-full" aria-label="Visit X">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                    </a>
+                </div>
+                <h3 class="text-2xl font-bold">EtherForge Protocol</h3>
+                <p class="text-secondary-web3 mb-2">Event Host & Moderator</p>
+                <p class="text-sm text-gray-500 mb-4">Currently working from 1-Jan-2026</p>
+                <ul class="text-gray-400 space-y-2 list-disc pl-4">
+                    <li>Organizing regular game nights since Jan 2026.</li>
+                    <li>Facilitating Web3 discussions and technical support.</li>
+                </ul>
+            </div>
+            <div class="hidden md:block w-[45%] text-right text-gray-500 font-bold text-xl px-8 italic">Active 2026</div>
+        </div>
+
+        <div class="flex flex-col md:flex-row justify-between items-center mb-24 reveal">
+            <div class="timeline-dot" style="top: 20%;"></div>
+            <div class="w-full md:w-[45%] bg-dark-card p-8 rounded-2xl border-l-4 border-secondary-web3 card-hover-3d relative">
+                <div class="flex justify-between items-start mb-6">
+                    <img src="https://pbs.twimg.com/profile_images/1947572629113618432/0lRixqfs_400x400.jpg" class="w-16 h-16 rounded-xl" alt="Pyron">
+                    <a href="https://x.com/Pyronfi" target="_blank" class="x-btn p-3 rounded-full" aria-label="Visit X">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                    </a>
+                </div>
+                <h3 class="text-2xl font-bold">Pyron (Fogo Labs)</h3>
+                <p class="text-secondary-web3 mb-2">Community Moderator</p>
+                <p class="text-sm text-gray-500 mb-4">Currently working from 1-Jul-2025</p>
+                <ul class="text-gray-400 space-y-2 list-disc pl-4">
+                    <li>Managing the community.</li>
+                    <li>Managed OG role verification and community events.</li>
+                </ul>
+            </div>
+            <div class="hidden md:block w-[45%]"></div>
+        </div>
+
+        <div class="flex flex-col md:flex-row-reverse justify-between items-center mb-24 reveal">
+            <div class="timeline-dot" style="top: 40%;"></div>
+            <div class="w-full md:w-[45%] bg-dark-card p-8 rounded-2xl border-r-4 border-secondary-web3 card-hover-3d relative">
+                <div class="flex justify-between items-start mb-6">
+                    <img src="https://pbs.twimg.com/profile_images/1945652432530280448/IVPq6Juo_400x400.jpg" class="w-16 h-16 rounded-xl" alt="Townies">
+                    <a href="https://x.com/townies_?s=21" target="_blank" class="x-btn p-3 rounded-full" aria-label="Visit X">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                    </a>
+                </div>
+                <h3 class="text-2xl font-bold">Townies</h3>
+                <p class="text-secondary-web3 mb-2">Project Manager & Lead</p>
+                <p class="text-sm text-gray-500 mb-4">6-SEP to 11-NOV-2025</p>
+                <ul class="text-gray-400 space-y-2 list-disc pl-4">
+                    <li>Led pre-registration and play-to-earn campaigns.</li>
+                    <li>Managed engagement across Base and Farcaster mini-games.</li>
+                </ul>
+            </div>
+            <div class="hidden md:block w-[45%]"></div>
+        </div>
+
+        <div class="flex flex-col md:flex-row justify-between items-center mb-24 reveal">
+            <div class="timeline-dot" style="top: 60%;"></div>
+            <div class="w-full md:w-[45%] bg-dark-card p-8 rounded-2xl border-l-4 border-secondary-web3 card-hover-3d relative">
+                <div class="flex justify-between items-start mb-6">
+                    <img src="https://pbs.twimg.com/profile_images/1955297917264101376/qqrTBTY__400x400.jpg" class="w-16 h-16 rounded-xl" alt="Velixo">
+                    <a href="https://x.com/velixomarket?s=21" target="_blank" class="x-btn p-3 rounded-full" aria-label="Visit X">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                    </a>
+                </div>
+                <h3 class="text-2xl font-bold">Velixomarket</h3>
+                <p class="text-secondary-web3 mb-2">Moderator</p>
+                <p class="text-sm text-gray-500 mb-4">Currently working from 1-AUG-2025</p>
+                <ul class="text-gray-400 space-y-2 list-disc pl-4">
+                    <li>Planned growth strategies for marketplace adoption.</li>
+                    <li>Maintained community environment and support.</li>
+                </ul>
+            </div>
+            <div class="hidden md:block w-[45%]"></div>
+        </div>
+
+        <div class="flex flex-col md:flex-row-reverse justify-between items-center mb-24 reveal">
+            <div class="timeline-dot" style="top: 80%;"></div>
+            <div class="w-full md:w-[45%] bg-dark-card p-8 rounded-2xl border-r-4 border-secondary-web3 card-hover-3d relative">
+                <div class="flex justify-between items-start mb-6">
+                    <img src="https://pbs.twimg.com/profile_images/1971105928519864320/7FKmgaOl_400x400.jpg" class="w-16 h-16 rounded-xl" alt="Slinky">
+                    <a href="https://x.com/slinkylayer?s=21" target="_blank" class="x-btn p-3 rounded-full" aria-label="Visit X">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                    </a>
+                </div>
+                <h3 class="text-2xl font-bold">Slinky Web3AI</h3>
+                <p class="text-secondary-web3 mb-2">Moderator & Ambassador (2024)</p>
+                <ul class="text-gray-400 space-y-2 list-disc pl-4">
+                    <li>Promoted AI platform secured by Bitcoin/Babylon.</li>
+                    <li>Educated creators on tokenized micro-economies.</li>
+                </ul>
+            </div>
+            <div class="hidden md:block w-[45%]"></div>
+        </div>
+
+        <div class="flex flex-col md:flex-row justify-between items-center mb-24 reveal">
+            <div class="timeline-dot" style="top: 100%;"></div>
+            <div class="w-full md:w-[45%] bg-dark-card p-8 rounded-2xl border-l-4 border-secondary-web3 card-hover-3d relative">
+                <div class="flex justify-between items-start mb-6">
+                    <img src="https://pbs.twimg.com/profile_images/1764108432435523584/gqN_kyVC_400x400.jpg" class="w-16 h-16 rounded-lg object-contain border border-gray-600 p-1" alt="Outcast Droids">
+                    <a href="https://x.com/OutcastDroids" target="_blank" class="x-btn p-3 rounded-full" aria-label="Visit X">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                    </a>
+                </div>
+                <h3 class="text-2xl font-bold">Outcast Droids</h3>
+                <p class="text-secondary-web3 mb-2">Community Moderator & Advisor</p>
+                <p class="text-sm text-gray-500 mb-4">Dec 2023 to 30-Sep-2024 (8+ months)</p>
+                <ul class="text-gray-300 space-y-2 list-disc pl-4">
+                    <li>Served as moderator and advisor for the NFT project, fostering a friendly environment.</li>
+                    <li>Managed channels during key NFT drops and announcements.</li>
+                </ul>
+            </div>
+            <div class="hidden md:block w-[45%]"></div>
+        </div>
+    </div>
+</section>
+
+<footer class="py-20 bg-gray-900 text-center border-t border-gray-800">
+    <div class="max-w-6xl mx-auto px-6">
+        <h2 class="text-3xl font-bold mb-8">Let's Connect</h2>
+        <div class="flex justify-center gap-6 mb-12">
+            <a href="https://x.com/Burhan_G_M" target="_blank" class="p-4 bg-dark-card border border-gray-700 rounded-full hover:border-secondary-web3 transition-all hover:scale-110">
+                <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </a>
+            <a href="mailto:Burhanahmad83844@gmail.com" class="p-4 bg-dark-card border border-gray-700 rounded-full hover:border-secondary-web3 transition-all hover:scale-110">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+            </a>
+        </div>
+        <p class="text-gray-500">© 2026 Burhan Ahmad. Built for the Decentralized Web.</p>
+    </div>
+</footer>
+
+<script>
+    const reveal = () => {
+        const reveals = document.querySelectorAll('.reveal');
+        reveals.forEach(el => {
+            const windowHeight = window.innerHeight;
+            const revealTop = el.getBoundingClientRect().top;
+            const revealPoint = 100;
+            if (revealTop < windowHeight - revealPoint) {
+                el.classList.add('active');
+            }
+        });
+    };
+    window.addEventListener('scroll', reveal);
+    reveal();
+</script>
+
+</body>
+</html>
